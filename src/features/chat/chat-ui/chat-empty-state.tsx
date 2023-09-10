@@ -53,7 +53,7 @@ export const EmptyState: FC<Prop> = (props) => {
           Personalise
         </Typography>
         <div className="flex flex-col gap-2">
-          <p className="text-sm ">Select the Azure OpenAI model</p>
+          <p className="text-sm ">Select the ChatGPT model</p>
           <ChatModelSelector
             disable={false}
             llmModel={props.llmModel}
@@ -78,7 +78,7 @@ export const EmptyState: FC<Prop> = (props) => {
           <ChatTypeSelector
             chatType={props.chatType}
             onChatTypeChange={onChatTypeChange}
-            disable={false}
+            disable={true}
           />
         </div>
         {showFileUpload === "data" && (
