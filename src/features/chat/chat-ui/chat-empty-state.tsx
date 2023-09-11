@@ -78,7 +78,7 @@ export const EmptyState: FC<Prop> = (props) => {
           <ChatTypeSelector
             chatType={props.chatType}
             onChatTypeChange={onChatTypeChange}
-            disable={true}
+            disable={false}
           />
         </div>
         {showFileUpload === "data" && (
