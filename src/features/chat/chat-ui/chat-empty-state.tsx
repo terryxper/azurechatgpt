@@ -60,7 +60,6 @@ export const EmptyState: FC<Prop> = (props) => {
             onLLMModelChange={props.onLLMModelChange}
           />
         </div>
-
         <div className="flex flex-col gap-2">
           <p className="text-sm text-muted-foreground">
             Choose a conversation style
@@ -71,16 +70,16 @@ export const EmptyState: FC<Prop> = (props) => {
             disable={false}
           />
         </div>
-        <div className="flex flex-col gap-2">
+        /* <div className="flex flex-col gap-2">
           <p className="text-sm text-muted-foreground">
             How would you like to chat?
           </p>
           <ChatTypeSelector
             chatType={props.chatType}
             onChatTypeChange={onChatTypeChange}
-            disable={false}
+            disable={true}
           />
-        </div>
+        </div> */
         {showFileUpload === "data" && (
           <div className="flex flex-col gap-2">
             <form onSubmit={onSubmit} className="flex gap-2">
